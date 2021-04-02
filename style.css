@@ -10,12 +10,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+.block-center {
+  margin: 0 auto;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  background-color: #6dd47e;
 }
 
 img {
@@ -23,11 +23,24 @@ img {
   height: auto;
 }
 
+.wrapper {
+  min-width: 320px;
+  width: 60%;
+  max-width: 800px;
+  min-height: 100vh;
+  background-color: #293250;
+  color: #ffd55a;
+  padding: 1em 0;
+}
+
+.header {
+  text-align: center;
+}
+
 .project-title {
   font-weight: 600;
   font-style: italic;
   font-size: 2.5rem;
-  color: royalblue;
 }
 
 .btn {
@@ -48,6 +61,7 @@ img {
   justify-content: center;
   gap: 0.5em;
   background-color: #e18741;
+  margin-top: 0.5em;
 }
 
 .icon {
@@ -56,9 +70,6 @@ img {
 }
 
 .quote-display {
-  min-width: 320px;
-  width: 60%;
-  max-width: 800px;
   padding: 2em 0.5em;
 }
 
@@ -76,6 +87,7 @@ img {
   position: relative;
   font-size: 2.2rem;
   padding: 0.5em 1em;
+  text-align: justify;
 }
 
 .quote-content::after,

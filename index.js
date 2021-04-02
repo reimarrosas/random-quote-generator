@@ -9,7 +9,7 @@ async function generateQuote() {
   const quoteDisplay = document.querySelector(".quote-display");
   const quoteData = await parseJSONQuote(fetchQuote(URL));
 
-  const quoteContainer = createElement("div", {className: "quote-container"});
+  const quoteContainer = createElement("div", {className: "quote-container block-center"});
   const quoteContent = createElement("article", {className: "quote-content", textContent: quoteData.quoteContent});
   const quoteAuthor = createElement("aside", {className: "quote-author", textContent: `― ${quoteData.quoteAuthor}`});
   const quoteGenre = createElement("small", {className: "quote-genre", textContent: `Genre: ${quoteData.quoteGenre}`});
