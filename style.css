@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200;1,300;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Raleway:ital,wght@0,400;1,200;1,300;1,600&display=swap");
 
 *,
 *::before,
@@ -73,8 +73,27 @@ img {
 }
 
 .quote-content {
+  position: relative;
   font-size: 2.2rem;
-  padding: 0.5em;
+  padding: 0.5em 1em;
+}
+
+.quote-content::after,
+.quote-content::before {
+  position: absolute;
+  content: '"';
+  font-size: 5rem;
+  font-family: "New Tegomin", serif;
+  opacity: 0.2;
+}
+
+.quote-content::before {
+  top: -1rem;
+  left: -0.2rem;
+}
+
+.quote-content::after {
+  bottom: -3.5rem;
 }
 
 .quote-author {
