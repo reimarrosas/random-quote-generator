@@ -57,6 +57,10 @@ img {
   cursor: pointer;
   transition: opacity 250ms;
   margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 .btn:hover {
@@ -64,11 +68,11 @@ img {
 }
 
 .btn--generate-quotes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
   background-color: #e18741;
+}
+
+.btn--clear-quotes {
+  background-color: #e1ae41;
 }
 
 .icon {
