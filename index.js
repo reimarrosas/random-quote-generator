@@ -15,7 +15,7 @@ async function generateQuote() {
   const quoteGenre = createElement("small", {className: "quote-genre", textContent: `Genre: ${quoteData.quoteGenre}`});
 
   appendMultipleChild(quoteContainer, quoteGenre, quoteContent, quoteAuthor);
-  quoteDisplay.appendChild(quoteContainer);
+  quoteDisplay.prepend(quoteContainer);
 }
 
 function createElement(elementType, elementProps) {
