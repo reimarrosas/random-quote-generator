@@ -1,6 +1,6 @@
 "use strict";
 
-const generateQuoteButton = document.querySelector(".generate-quotes");
+const generateQuoteButton = document.querySelector(".btn--generate-quotes");
 const URL = "https://quote-garden.herokuapp.com/api/v3/quotes/random";
 
 generateQuoteButton.addEventListener("click", generateQuote);

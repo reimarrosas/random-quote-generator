@@ -7,7 +7,42 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .project-title {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: royalblue;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5em 0.75em;
+  border: 0;
+  cursor: pointer;
+  transition: opacity 250ms;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn--generate-quotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: #e18741;
+}
+
+.icon {
+  width: 1.2rem;
+  height: 1.2rem;
 }
