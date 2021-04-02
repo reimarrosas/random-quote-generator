@@ -3,10 +3,16 @@
 const URL = "https://quote-garden.herokuapp.com/api/v3/quotes/random";
 const quoteDisplay = document.querySelector(".quote-display");
 
+
+
+
 const clearQuotesButton = document.querySelector(".btn--clear-quotes" );
 clearQuotesButton.addEventListener("click", () => {
   quoteDisplay.innerHTML = "";
 });
+
+
+
 
 const generateQuoteButton = document.querySelector(".btn--generate-quotes");
 generateQuoteButton.addEventListener("click", generateQuote);
