@@ -11,7 +11,7 @@ async function generateQuote() {
 
   const quoteContainer = createElement("div", {className: "quote-container"});
   const quoteContent = createElement("article", {className: "quote-content", textContent: quoteData.quoteContent});
-  const quoteAuthor = createElement("aside", {className: "quote-author", textContent: quoteData.quoteAuthor});
+  const quoteAuthor = createElement("aside", {className: "quote-author", textContent: `― ${quoteData.quoteAuthor}`});
   const quoteGenre = createElement("small", {className: "quote-genre", textContent: `Genre: ${quoteData.quoteGenre}`});
 
   appendMultipleChild(quoteContainer, quoteGenre, quoteContent, quoteAuthor);

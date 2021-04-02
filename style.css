@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200;1,300;1,600&display=swap");
 
 *,
 *::before,
@@ -8,6 +8,14 @@
   padding: 0;
   list-style: none;
   font-family: "Raleway", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 img {
@@ -45,4 +53,50 @@ img {
 .icon {
   width: 1.2rem;
   height: 1.2rem;
+}
+
+.quote-display {
+  min-width: 320px;
+  width: 60%;
+  max-width: 800px;
+  padding: 2em 0.5em;
+}
+
+.quote-container {
+  margin-top: 3em;
+}
+
+.quote-genre {
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.quote-content {
+  font-size: 2.2rem;
+  padding: 0.5em;
+}
+
+.quote-author {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 10px;
+  }
 }
