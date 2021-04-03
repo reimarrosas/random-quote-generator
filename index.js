@@ -25,7 +25,7 @@ async function generateQuote() {
   const quoteAuthor = createElement("aside", {className: "quote-author", textContent: `― ${quoteData.quoteAuthor}`});
   const quoteGenre = createElement("small", {className: "quote-genre", textContent: `Genre: ${quoteData.quoteGenre}`});
 
-  appendMultipleChild(quoteContainer, quoteGenre, quoteContent, quoteAuthor);
+  appendMultipleChildren(quoteContainer, quoteGenre, quoteContent, quoteAuthor);
   quoteDisplay.prepend(quoteContainer);
 }
 
@@ -42,7 +42,7 @@ function createElement(elementType, elementProps) {
   return element;
 }
 
-function appendMultipleChild(parent, ...children) {
+function appendMultipleChildren(parent, ...children) {
   children.forEach(child => parent.appendChild(child));
 }
 
