@@ -89,6 +89,16 @@ img {
 
 .quote-container {
   margin-top: 3em;
+  animation: 500ms cubic-bezier(0.1, 0.76, 1, 1.5) 1 forwards slideIn;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .quote-genre {

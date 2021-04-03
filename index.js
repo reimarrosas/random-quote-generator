@@ -5,7 +5,7 @@ const quoteDisplay = document.querySelector(".quote-display");
 
 
 
-
+// Event Listener for the Clear  quotes button
 const clearQuotesButton = document.querySelector(".btn--clear-quotes" );
 clearQuotesButton.addEventListener("click", () => {
   quoteDisplay.innerHTML = "";
@@ -13,7 +13,7 @@ clearQuotesButton.addEventListener("click", () => {
 
 
 
-
+// Event Listener for the Generate quote button
 const generateQuoteButton = document.querySelector(".btn--generate-quotes");
 generateQuoteButton.addEventListener("click", generateQuote);
 
