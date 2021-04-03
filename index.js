@@ -32,7 +32,7 @@ async function generateQuote() {
 function createElement(elementType, elementProps) {
   const element = document.createElement(elementType);
   Object.keys(elementProps).forEach(prop => {
-    if (!element[prop]) {
+    if (element[prop] !== "undefined") {
       element[prop] = elementProps[prop];
     } else {
       console.warn(`Invalid property: ${prop}`);
